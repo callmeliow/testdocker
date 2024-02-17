@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoApplication {
 	@GetMapping("/")
 	public String welcome(){
-		return "Welcome";
+		return "Welcome to aws";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
