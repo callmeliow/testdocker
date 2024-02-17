@@ -9,9 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoApplication {
 	@GetMapping("/")
-	public String welcome(){
+	public String index(){
 		return "Welcome to aws";
 	}
+
+	@GetMapping("/welcome")
+	public String welcome(){
+		return "welcome page";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
